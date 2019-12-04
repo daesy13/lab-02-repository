@@ -1,0 +1,38 @@
+body {
+  margin: 0 auto;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid purple;
+  border-radius: 25px;
+  /* float: left; */
+}
+
+h1{
+  font-family: 'Bebas Neue';
+}
+
+#photo-template {
+  text-align: center;
+  word-wrap: break-word
+}
+
+h2{
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  word-break: break-all;
+}
+
+div {
+  display: inline-block;
+  
+  align-items: center;
+  
+  height: 100%;
+}
+

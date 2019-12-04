@@ -16,19 +16,19 @@ Number and name of feature:
 
 Estimate of time needed to complete: 45min
 
-Start time: 10:40am
+Start time: 11:00am
 
-Finish time: 11:25am
+Finish time: 12:24am
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1hr and 24min
 
 Number and name of feature: 
 3. Style the app
 
 Estimate of time needed to complete: 40min
 
-Start time: 11:25
+Start time: 12:34
 
-Finish time: 12:05
+Finish time: 1:04
 
-Actual time needed to complete: _____
+Actual time needed to complete: 30 min
