@@ -68,3 +68,16 @@ $(document).ready(function(){
     )
   });
 });
+
+// SORT BY HORN 
+// $(document).ready(function(){
+//   $('#but_filter').click(function() {
+//     let $animal = $('#keyword-dropdown option:selected').text();
+
+//     $('#result').html('animal: ' + $animal)
+
+//     $('div').hide();
+//     $(`div[class="${$animal}"]`).show();
+//     console.log(`div[class="${$animal}"]`);
+//   });
+// });
