@@ -8,7 +8,6 @@ function Creatures(creatureIsObject){
   this.horns=creatureIsObject.horns;
 }
 
-
 Creatures.prototype.renderingWithJQuery = function(){
   $('#photo-template').append(`
     <div class="${this.keyword}">
