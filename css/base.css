@@ -1,5 +1,13 @@
 body {
   margin: 0 auto;
+  /* display: flex; */
+  /* align-items: ; */
+}
+
+main{
+  /* display: inline-flex; */
+  /* flex-direction: column;
+  align-items: flex-start; */
 }
 
 #page_button{
@@ -21,7 +29,10 @@ h1{
 
 #photo-template {
   text-align: center;
-  word-wrap: break-word
+  word-wrap: break-word;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px; */
 }
 
 h2{
@@ -35,7 +46,7 @@ p {
 
 div {
   display: inline-block;
-  
+  width: 315px;
   align-items: center;
   
   height: 100%;

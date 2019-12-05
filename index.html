@@ -4,6 +4,7 @@
     <title>The Gallery of Horns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/base.css">
@@ -19,6 +20,16 @@
     </script>
   
   </head>
+
+  <script id="horns-template" type="text/x-handlebars-template">
+    <div class={{keyword}}>
+      <h2>{{title}}</h2>
+        <p>{{description}}</p>
+        <img src={{image_url}}>
+    </div>
+    </div>
+  </script>
+  
   <body>
     <header>
       <h1>The Gallery of Horns</h1>
@@ -43,6 +54,7 @@
 
       <br/>
       <div id='result'></div>
+      <input type='button' value='Switch Page' id='page_button'>
     </header>
     <main>
       <section id="photo-template">

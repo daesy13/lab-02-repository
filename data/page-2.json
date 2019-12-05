@@ -82,7 +82,8 @@
     "description": "This giraffe is as tall as the sky",
     "keyword": "giraffe",
     "horns": 2
-  },
+  }, 
+
   {
     "image_url": "https://i.pinimg.com/originals/34/b8/4f/34b84f9b61883e69181d81f21d8f1a2d.jpg",
     "title": "Trotting rhino",
