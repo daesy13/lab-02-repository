@@ -18,12 +18,29 @@ Creatures.prototype.renderingWithJQuery = function(){
   )
 }
 
+Creatures.prototype.renderingWithHandlebars = function(){
+
+  let hornsTemplate = $('#horns-template').html();
+
+  let hbHornsTemplate = Handlebars.compile(hornsTemplate);
+
+  let testObject = {
+    title: "Potato",
+    body: "Carrot"
+  }
+
+  let html = hbHornsTemplate(this);
+  console.log('Creatures Object', this);
+
+  $('#photo-template').append(html);
+}
+
 $.get('../data/page-1.json').then(
   (data) => {
-    console.log(data);
     data.forEach(creatureObjFromFile => {
       let creature = new Creatures( creatureObjFromFile.image_url,creatureObjFromFile.title, creatureObjFromFile.description, creatureObjFromFile.keyword, creatureObjFromFile.horns);
-      creature.renderingWithJQuery();
+      // creature.renderingWithJQuery();
+      creature.renderingWithHandlebars();
     })
   }
 )
