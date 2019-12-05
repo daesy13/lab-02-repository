@@ -1,11 +1,11 @@
 'use strict'
 
-function Creatures(creatureIsObject){
-  this.image_url=creatureIsObject.image_url;
-  this.title=creatureIsObject.title;
-  this.description=creatureIsObject.description;
-  this.keyword=creatureIsObject.keyword;
-  this.horns=creatureIsObject.horns;
+function Creatures(image_url, title, description, keyword, horns){
+  this.image_url=image_url;
+  this.title=title;
+  this.description=description;
+  this.keyword=keyword;
+  this.horns=horns;
 }
 
 Creatures.prototype.renderingWithJQuery = function(){
@@ -43,6 +43,7 @@ $.get('../data/page-1.json').then(
 $(document).ready(function(){
   $('#but_read').click(function() {
     let $animal = $('#keyword-dropdown option:selected').text();
+
     $('#result').html('animal: ' + $animal)
 
     $('div').hide();
@@ -50,6 +51,7 @@ $(document).ready(function(){
     console.log(`div[class="${$animal}"]`);
   });
 });
+
 
 // PAGE 2 EVENT LISTENER
 
@@ -66,4 +68,3 @@ $(document).ready(function(){
     )
   });
 });
-
