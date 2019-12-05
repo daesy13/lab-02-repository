@@ -8,6 +8,7 @@ function Creatures(image_url, title, description, keyword, horns){
   this.horns=horns;
 }
 
+
 Creatures.prototype.renderingWithJQuery = function(){
   $('#photo-template').append(`
     <div class="${this.keyword}">
@@ -23,11 +24,6 @@ Creatures.prototype.renderingWithHandlebars = function(){
   let hornsTemplate = $('#horns-template').html();
 
   let hbHornsTemplate = Handlebars.compile(hornsTemplate);
-
-  let testObject = {
-    title: "Potato",
-    body: "Carrot"
-  }
 
   let html = hbHornsTemplate(this);
   console.log('Creatures Object', this);
