@@ -8,7 +8,6 @@ function Creatures(image_url, title, description, keyword, horns){
   this.horns=horns;
 }
 
-
 Creatures.prototype.renderingWithJQuery = function(){
   $('#photo-template').append(`
     <div class="${this.keyword}">
