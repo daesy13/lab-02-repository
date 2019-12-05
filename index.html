@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/base.css">
+  
+    <script id="creature-template" type="text/x-handlebars-template">
+      <!-- <section id="photo-template"> -->
+        <div class="{{keyword}}">
+          <h2>{{title}}</h2>
+          <img src="{{image_url}}">
+          <p>{{description}}</p>
+        </div>
+      <!-- </section> -->
+    </script>
+  
   </head>
   <body>
     <header>
@@ -26,18 +38,25 @@
       </select>
       <input type='button' value='Selected Option' id='but_read'>
 
+      <input type='button' value='Switch Page' id='page_button'>
+
+
       <br/>
       <div id='result'></div>
     </header>
     <main>
       <section id="photo-template">
-        <h2></h2>
-        <p></p>
+
       </section>
     </main>
     <footer>
       &COPY; 2019 Travis & Daesy
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/data/page-1.json"></script>
+    <script src="/data/page-2.json"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
